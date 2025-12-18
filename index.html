@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./FLOPAI/js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4K3B21ZZXS');
+    </script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flopai</title>
+    <link href="./FLOPAI/tailwind.min.css" rel="stylesheet">
+    <link href="./FLOPAI/tailwind.min.css" rel="stylesheet">
+    <link href="./FLOPAI/css2" rel="stylesheet">
+
+
+
+    <style>
+        :root {
+            --margin-page: 2em;
+            --ui-primary: #000;
+            --ui-secondary: #6b7280;
+            --text-select--bg: #7d7373;
+        }
+
+        html {
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            padding: 0;
+        }
+
+        :focus-visible {
+            outline: 1px dotted;
+            outline-offset: 0.1875em;
+            border-radius: 1px;
+            text-decoration: none;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(5px);
+            }
+
+            50% {
+                transform: translateY(-5px);
+            }
+
+            100% {
+                transform: translateY(5px);
+            }
+        }
+
+        @keyframes gradRotate {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+        .float-animation {
+            backface-visibility: hidden;
+            animation: float 7s ease-in-out infinite;
+        }
+
+        @media(prefers-reduced-animation: reduce) {
+            .float-animation {
+                animation: none;
+            }
+        }
+
+        body {
+            font-family: 'Courier New', sans-serif;
+            line-height: 1.333;
+            margin: 0;
+            padding: 0 var(--margin-page, 20px);
+            color: var(--ui-primary, #000);
+            text-wrap: pretty;
+        }
+
+        main {
+            max-width: 48em;
+        }
+
+        p {
+            margin: 0 0 1.333em;
+            text-wrap: pretty;
+        }
+
+        a {
+            text-decoration: underline;
+            text-underline-offset: 0.25em;
+            text-decoration-thickness: 1px;
+        }
+
+        a:hover {
+            text-decoration-style: dotted;
+        }
+
+        .anchor__target {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        h1 {
+            font-size: clamp(4.25em, 4.5vw, 6em);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-wrap: balance;
+            font-family: 'Chakra Petch', sans-serif;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 1em;
+            font-weight: 700;
+            margin: 4em 0 1.33em;
+            text-align: center;
+            text-wrap: balance;
+        }
+
+        dt {
+            font-size: 1em;
+            font-weight: normal;
+            margin: 2.666em 0 0.666em 1.333em;
+            font-style: italic;
+        }
+
+        mark {
+            background-color: #f4f1f1;
+        }
+
+        hr {
+            padding-bottom: 30px;
+            width: 30%;
+            margin: auto;
+        }
+
+        ul li {
+            list-style-type: square;
+            margin-left: 15px;
+            padding-left: 5px;
+        }
+
+        .gradient-text {
+            position: relative;
+            overflow: hidden;
+            background: white;
+            color: black;
+            border: solid 1px white;
+            /* Fix for subpixel rendering */
+        }
+
+        .gradient-text:AFTER {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 150%;
+            aspect-ratio: 1;
+            background: linear-gradient(90deg, #3b4b3b, #d2caca);
+            mix-blend-mode: screen;
+            animation: gradRotate 8s linear infinite;
+            pointer-events: none;
+        }
+
+        .footnote {
+            text-align: center;
+            margin: 7em 0 0;
+        }
+
+        .header {
+            max-width: var(--container-4xl);
+            margin-inline: auto;
+            padding-block: 80px;
+        }
+
+        @media(max-width:750px) {
+            :root {
+                --margin-page: 1.333em;
+            }
+        }
+
+        @media(min-width:1500px) {
+            body {
+                font-size: 18px;
+                line-height: 1.333;
+            }
+        }
+
+        .team-members span {
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .team-members span:hover {
+            background-color: #f4f1f1;
+        }
+
+        /* New style: When a team member is "selected", keep it highlighted */
+        .team-members span.selected {
+            background-color: #f4f1f1;
+        }
+
+        #hover-title {
+            min-height: 100px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header role="banner" class="header text-center">
+        <h1 class="gradient-text float-animation inline-block">
+            FLOP AI <br>
+        </h1>
+    </header>
+    <main role="main" class="mx-auto">
+
+        <p>
+            What if your home could think for itself, respond to you like a friend, and effortlessly take care of your needs? Imagine a space that understands your preferences, suggests the perfect materials, and adapts to your lifestyle—without you lifting a finger. At Flop AI, we’re turning these bold, almost crazy ideas into practical reality. We’re not here to chase the next big LLM or build generic AI solutions. Instead, we focus on niche problems that truly matter—creating AI-driven tools that rethink design, architecture, and the way we interact with our surroundings. Our goal isn’t just innovation for its own sake—it’s making the impossible feel natural, accessible, and useful.
+        </p>
+
+        <h2>About Flopai.tech </h2>
+
+        <p><mark>Artificial intelligence has the power to reshape industries.</mark>but we don’t chase broad, general problems that bigger companies can solve easily. Instead, we focus on niche, underserved areas like architecture, fashion retail, and construction, crafting AI solutions that are practical, efficient, and easy to use. Our approach is built on agility—we embrace parallel prototyping, pivoting, or persevering as needed because AI is unpredictable, and relying on ever-changing base models can be risky. By staying adaptable and problem-focused, we ensure our solutions deliver real value where it matters most.
+</p>
+
+
+        <h2>Our Projects  </h2>
+
+        <p><mark>Our AI Design Helper is a long-term, transformative project aimed at revolutionizing habitat </mark> design by making high-quality architectural planning accessible to everyone. While not a short-term commercial venture, its ultimate goal is to develop a system capable of fully automating design through AI or future AGI systems. Along the way, we are delivering product lines that enhance current workflows, easing the design process with today’s technology. By automating repetitive tasks, optimizing layouts, and providing real-time suggestions, it boosts efficiency, reduces errors, and eliminates unnecessary losses. This shift will not only streamline the work of architects and designers but also democratize design, making professional-quality spaces achievable for all.
+
+            </p>
+
+        <p><mark>Our AI-augmented architectural material procurement  (sourcing solutions ) system empowers anyone</mark> T—whether architects, designers, or homeowners—to effortlessly access, source, and integrate the perfect materials for any project. By cutting sourcing time by 10x and reducing costs by 20-30%, it streamlines decision-making and eliminates inefficiencies. Designed for seamless integration with existing workflows, including BIM systems, it makes finding and fitting the right materials faster and smarter. While AI currently handles discovery and selection, human expertise ensures verification and logistics—but in the future, AI will make the entire construction and design process effortless. With real-time pricing on our roadmap, we’re redefining how spaces are built, ensuring that imagination—not complexity—is the only limit.
+        </p>
+
+        <p><mark>Then there’s our AI Mirror, which is changing the game in fashion retail.</mark> This smart device analyzes a user’s preferences and body data to offer personalized fashion advice and health insights. It’s more than just technology—it’s a way to make shopping feel more tailored and engaging, benefiting both customers and retailers alike
+
+
+
+        </p>
+        <h2>What Sets Us Apart  </h2>
+
+        <p><mark>Flop AI takes a different approach in the ever-evolving AI landscape.  </mark> We don’t chase broad, generic solutions that bigger companies can easily replicate. Instead, we focus exclusively on niche industries—architecture, fashion retail, and construction—where AI adoption is still fragmented and real impact can be made. Our goal is to develop specialized tools that solve distinct, overlooked challenges, making AI truly useful for these sectors.
+
+        </p>
+
+        <p><mark>AI development today is unpredictable and heavily dependent on base models like LLMs, which are costly to train, fine-tune, and maintain. </mark> Betting everything on a single project is a high-risk move. That’s why we embrace an agile approach inspired by Real Options Theory and lean startup principles. We run parallel MVPs, experiment rapidly, and pivot when necessary to stay ahead in a field where technology evolves unpredictably. This flexibility allows us to deliver real, working solutions rather than getting stuck in endless research cycles.
+
+        </p>
+
+        <p><mark>At Flop AI, speed and adaptability define our work</mark> We don’t just build for the sake of innovation—we create practical, intuitive tools that solve real problems. It’s not about having the flashiest AI features; it’s about ensuring that technology actually enhances workflows, reduces inefficiencies, and empowers users.
+</p>
+
+        <h2> Get Involved  </h2>
+
+            <p><mark>The journey of AI is just beginning, and we’d love for you to be part of it.</mark> There are plenty of ways to connect with what we’re building at Flop AI. Whether you’re looking to join our team, collaborate on a bold idea, invest in the future of AI-driven design, or simply share insights, we’re always eager to connect. If you believe in pushing boundaries and making practical innovation happen, let’s talk—this could be the start of something exciting.
+
+
+            </p>
+    
+
+    
+
+        <h2>Team</h2>
+        <p class="team-members">
+            <span bio-name="Aluph shahim" data-bio="Founder of Flopai.formel architect and founder of hallohom.com"><a href="https://www.linkedin.com/in/aluph12" target="_blank">Aluph shahim</a></span>,
+            <span bio-name="Anif shahim" data-bio="Co-founder of Flopai." class=""><a href="https://x.com/PGriham43392" target="_blank">Anif shahim</a></span>,
+            <span bio-name="sharath" data-bio="Data researcher,ML engineer,founder of ATOM DESIGNE LAB " class=""><a href="https://wa.me/917012615982" target="_blank">sharath</a></span>,
+            <span bio-name="COMMONARY LABS" data-bio="Investor " class=""><a href="https://commonarylabs.com/" target="_blank">COMMONARY LABS</a></span>,
+            <span bio-name="Muhsin pk" data-bio=" assistant professor." class=""><a href="" target="_blank">Muhsin pk  </a></span>,
+            <span bio-name="Muhammed irfan" data-bio=" Math professor,Data researcher,ML researcher,." class=""><a href="" target="_blank">Muhammed irfan  </a></span>,
+            <span bio-name="Isham Sulaiman" data-bio=" Architect, 75 east" class=""><a href="" target="_blank">Isham Sulaiman  </a></span>,
+
+
+        </p>
+
+        <!-- Hover Title Display -->
+        <div id="hover-title" class="mx-auto mt-4 p-4 bg-white border border-gray-200 rounded transition"><b class="font-semibold mb-0.7">Kurt Shuster</b><p class="mb-0">Reasoning at Google DeepMind, full-stack pre-training and inference at Character.AI, and fundamental dialogue research at Meta AI.</p></div>
+
+
+ 
+        <h2>Contact Us  </h2>
+
+        <p>
+            If you have questions or want to learn more, reaching us is simple. You can send an email to <a href="mailto:aluph12@gmail.com" target="_blank">@aluph12@gmail</a> , and we’ll get back to you promptly. 
+            For updates and insights, you’re welcome to follow us on Twitter at <a href="https://twitter.com/flopai"  target="_blank">@flopai</a> or connect with us on LinkedIn <a href="https://linkedin.com/company/flopai" target="_blank">@flopai</a>  
+            We’re here to help and happy to chat about what’s next.
+
+        </p>
+        <p>
+        </p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footnote">
+        <p>© 2023 Flopai.tech. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hoverTitle = document.getElementById("hover-title");
+            if (!hoverTitle) {
+                console.error("No element with id 'hover-title' found.");
+                return;
+            }
+
+            const teamMembers = document.querySelectorAll(".team-members span");
+            if (teamMembers.length === 0) {
+                console.error("No team member spans found under '.team-members'.");
+                return;
+            }
+
+            // Choose a random team member for the default bio on load.
+            const randomIndex = Math.floor(Math.random() * teamMembers.length);
+            const defaultMember = teamMembers[randomIndex];
+
+            defaultMember.classList.add("selected");
+            hoverTitle.innerHTML = `<b class="font-semibold mb-0.7">${defaultMember.getAttribute("bio-name").trim()}</b><p>${defaultMember.dataset.bio}</p>`;
+
+            function isMobileDevice() {
+                return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            }
+            function updateBio(member) {
+                teamMembers.forEach(m => m.classList.remove("selected"));
+                member.classList.add("selected");
+                hoverTitle.innerHTML = `<b class="font-semibold mb-0.7">${member.getAttribute("bio-name").trim()}</b><p class="mb-0">${member.dataset.bio}</p>`;
+            }
+
+            function updateMobileBio(member) {
+                teamMembers.forEach(m => m.classList.remove("selected"));
+                member.classList.add("selected");
+                hoverTitle.innerHTML = `<a href="${member.querySelector('a').href}" target="_blank"><b class="font-semibold mb-0.7">${member.getAttribute("bio-name").trim()}</b></a><p class="mb-0">${member.dataset.bio}</p>`;
+            }
+
+            // Add hover event listeners for each team member.
+            teamMembers.forEach(member => {
+
+                // Desktop hover event
+                member.addEventListener("mouseenter", () => {
+                    updateBio(member);
+                });
+
+                if (isMobileDevice()) {
+                    // Mobile click event to toggle bio
+                    member.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        updateMobileBio(member);
+                    });
+                }
+
+            });
+        });
+    </script>
+
+
+</body></html>
